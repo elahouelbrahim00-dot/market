@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elahouel Market</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🛒 Elahouel Market</h1>
+
+    <div class="dateBox">
+        <label>Date :</label>
+        <input type="date" id="date">
+    </div>
+
+</header>
+
+<div class="toolbar">
+
+<button id="addRow">➕ Ajouter Client</button>
+
+<button id="saveFile">💾 Enregistrement sous...</button>
+
+<button id="openFile">📂 Ouvrir</button>
+
+<button id="printPage">🖨️ Imprimer</button>
+
+<input type="file" id="fileInput" hidden>
+
+</div>
+
+
+<table id="clientTable">
+
+<thead>
+
+<tr>
+
+<th style="width:250px">Nom du Client</th>
+
+<th>Achat</th>
+
+<th>Coffre</th>
+
+<th>Caisse</th>
+
+<th>Réserve</th>
+
+<th>Etat</th>
+
+<th>Supprimer</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+<tfoot>
+
+<tr>
+
+<th>Total</th>
+
+<th id="totalAchat">0</th>
+
+<th id="totalCoffre">0</th>
+
+<th id="totalCaisse">0</th>
+
+<th id="totalReserve">0</th>
+
+<th></th>
+
+<th></th>
+
+</tr>
+
+</tfoot>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
